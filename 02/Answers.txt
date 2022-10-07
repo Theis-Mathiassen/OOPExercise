@@ -1,0 +1,9 @@
+01: Access Modiers
+(a) Explain, in your own words, the access modiers: private, protected, and public. When would
+you use each? Which would you use by default?
+
+private: Kan kun tilgåes inden for klassen.
+protected: Kan kun tilgåes inden for klassen og de klasser der arver fra den.
+Public: Kan bruges af alle.
+
+
