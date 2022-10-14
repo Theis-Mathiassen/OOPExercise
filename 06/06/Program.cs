@@ -6,7 +6,8 @@
 
 
 //firstTask();
-secondTask();
+//secondTask();
+thirdTask();
 
 
 
@@ -52,4 +53,21 @@ void secondTask()
     Console.WriteLine(pair2);
     Pair<string,Pair<float, float>> pair3 = pair2.Swap();
     Console.WriteLine(pair3);
+}
+
+void thirdTask ()
+{
+    Dict<int, string> dictionay = new Dict<int, string>();
+    dictionay.Put(new Pair<int, string>(0, "Hello World!"));
+    dictionay.Put(new Pair<int, string>(3, "Theis"));
+    dictionay.Put(new Pair<int, string>(6, "Test"));
+    dictionay.Put(new Pair<int, string>(87, "Foo"));
+    dictionay.Put(new Pair<int, string>(32, "Bar"));
+    dictionay.Put(new Pair<int, string>(31, "Secret"));
+
+    Console.WriteLine(dictionay.Get(32));
+    dictionay.Put(new Pair<int, string>(32, "Bar2"));
+    Console.WriteLine(dictionay.Get(32));
+
+
 }
