@@ -2,9 +2,14 @@
 
 namespace _05 // Note: actual namespace depends on the project name.
 {
-    internal class Program
+    internal partial class Program
     {
         static void Main(string[] args)
+        {
+            Task4();
+        }
+
+        static void Task1 ()
         {
             do
             {
@@ -12,6 +17,27 @@ namespace _05 // Note: actual namespace depends on the project name.
                 Console.WriteLine("You wrote: " + ReadInteger());
 
             } while (Console.ReadKey().Key != ConsoleKey.Escape);
+        }
+        static void Task2 ()
+        {
+
+        }
+        static void Task3 ()
+        {
+            BankAccount ba = new BankAccount(100m);
+            try
+            {
+                ba.Withdraw(ReadInteger());
+
+            }
+            catch (InsufficientFundsException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+        static void Task4 ()
+        {
+
         }
 
         static int ReadInteger ()

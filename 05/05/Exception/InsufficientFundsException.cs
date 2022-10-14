@@ -2,8 +2,12 @@
 
 namespace _05 // Note: actual namespace depends on the project name.
 {
-    class test
+    internal partial class Program
     {
+        class InsufficientFundsException : Exception
+        {
+
+        }
 
     }
 }
